@@ -10,7 +10,7 @@ const schema = new mongoose.Schema({
         required: true,
     },
     isCompleted: {
-        type: String,
+        type: Boolean,
         default: false,
     },
     user:{
@@ -24,4 +24,4 @@ const schema = new mongoose.Schema({
     }
 });
 
-export const User = mongoose.model("User", schema);
+export const Task = mongoose.model("Task", schema);
